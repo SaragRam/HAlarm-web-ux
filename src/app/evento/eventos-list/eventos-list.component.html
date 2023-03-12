@@ -21,8 +21,55 @@
                 <th>Responsable</th>
                 <th>Acciones</th>
               </tr>
+              <tr>
+                <td><input class="form-control" placeholder="" aria-label="Search" (click)="filtrarEventos()"></td>
+                <td><input class="form-control" type="date" aria-label="Search" (click)="filtrarEventos()"></td>
+                <td><input class="form-control" placeholder="" aria-label="Search" (click)="filtrarEventos()"></td>
+                <td><input class="form-control" placeholder="" aria-label="Search" (click)="filtrarEventos()"></td>
+              </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>Endoscopia</td>
+                <td>2021-08-01 12:00</td>
+                <td>Sala 1</td>
+                <td>Juan López</td>
+                <td>
+                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
+                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Laparoscopia</td>
+                <td>2021-08-01 13:00</td>
+                <td>Sala 12</td>
+                <td>Paula Reyes</td>
+                <td>
+                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
+                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Apendicectomía</td>
+                <td>2021-08-01 14:00</td>
+                <td>Sala 3</td>
+                <td>Diana Pérez</td>
+                <td>
+                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
+                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Capacitación</td>
+                <td>2021-08-01 16:00</td>
+                <td>Sala 5</td>
+                <td>Pedro García</td>
+                <td>
+                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
+                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                </td>
+              </tr>
+              
               
             </tbody>
           </table>
