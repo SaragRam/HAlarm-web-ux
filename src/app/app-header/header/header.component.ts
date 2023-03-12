@@ -16,16 +16,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void { }
 
   goTo(menu: string) {
-    const userId = parseInt(this.router.snapshot.params.userId)
-    const token = this.router.snapshot.params.userToken
-    if (menu === "logIn") {
-      this.routerPath.navigate([`/`])
+
+    if (menu === "eventos") {
+      this.routerPath.navigate([`/eventos`])
     }
-    else if (menu === "carrera") {
-      this.routerPath.navigate([`/carreras/${userId}/${token}`])
+    else if (menu === "crearEvento") {
+      this.routerPath.navigate([`/crear-evento`])
     }
     else {
-      this.routerPath.navigate([`/apuestas/${userId}/${token}`])
+      this.routerPath.navigate([`/importar-eventos`])
     }
   }
 
