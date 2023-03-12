@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   onLogIn() {
 
-
+    this.router.navigate([`/eventos`])
 
   }
 
