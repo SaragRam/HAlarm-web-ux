@@ -1,31 +1,29 @@
 <app-header></app-header>
 <div class="container my-4">
   <div class="row">
-    <div class="col-8">
-      <div class="card">
-        <div class="card-header">
-          <div class="row">
-            <div class="col-10 text-center">
-              <label class="fs-4 texto1">Eventos Programados</label>
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
+    <div class="offset-2 col-8">
 
-          <table class="table table-hover mb-0" aria-describedby="colecName">
+          <div class="d-flex justify-content-center">
+
+              <h2 class="texto1 mt-4">Eventos Programados</h2>
+
+          </div>
+
+          <table class="table bordertable mb-0 mt-5" aria-describedby="colecName">
             <thead>
               <tr>
-                <th>Nombre</th>
-                <th>Fecha-Hora</th>
-                <th>Lugar</th>
-                <th>Responsable</th>
-                <th>Acciones</th>
+                <th class="texto1">Nombre</th>
+                <th class="texto1">Fecha-Hora</th>
+                <th class="texto1">Lugar</th>
+                <th class="texto1">Responsable</th>
+                <th class="texto1">Acciones</th>
               </tr>
               <tr>
                 <td><input class="form-control bordeinput" placeholder="" aria-label="Search"></td>
                 <td><input class="form-control bordeinput" type="date" aria-label="Search"></td>
                 <td><input class="form-control bordeinput" placeholder="" aria-label="Search"></td>
                 <td><input class="form-control bordeinput" placeholder="" aria-label="Search"></td>
+                <td></td>
               </tr>
             </thead>
             <tbody>
@@ -34,9 +32,13 @@
                 <td>2021-08-01 12:00</td>
                 <td>Sala 1</td>
                 <td>Juan López</td>
-                <td>
-                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
-                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                <td class="d-flex">
+                  <button class="btn-icon" (click)="editarEvento()">
+                    <img src="../../../assets/editar.png" alt="editar">
+                  </button>
+                  <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <img src="../../../assets/eliminar.png" alt="eliminar">
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -44,9 +46,13 @@
                 <td>2021-08-01 13:00</td>
                 <td>Sala 12</td>
                 <td>Paula Reyes</td>
-                <td>
-                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
-                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                <td class="d-flex">
+                  <button class="btn-icon" (click)="editarEvento()">
+                    <img src="../../../assets/editar.png" alt="editar">
+                  </button>
+                  <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <img src="../../../assets/eliminar.png" alt="eliminar">
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -54,9 +60,13 @@
                 <td>2021-08-01 14:00</td>
                 <td>Sala 3</td>
                 <td>Diana Pérez</td>
-                <td>
-                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
-                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                <td class="d-flex">
+                  <button class="btn-icon" (click)="editarEvento()">
+                    <img src="../../../assets/editar.png" alt="editar">
+                  </button>
+                  <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <img src="../../../assets/eliminar.png" alt="eliminar">
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -64,17 +74,39 @@
                 <td>2021-08-01 16:00</td>
                 <td>Sala 5</td>
                 <td>Pedro García</td>
-                <td>
-                  <button type="button" class="btn btn-success" (click)="editarEvento()">Editar</button>
-                  <button type="button" class="btn btn-danger" (click)="eliminarEvento()">Eliminar</button>
+                <td class="d-flex">
+                  <button class="btn-icon" (click)="editarEvento()">
+                    <img src="../../../assets/editar.png" alt="editar">
+                  </button>
+                  <button class="btn-icon" data-bs-toggle="modal" data-bs-target="#eliminarModal">
+                    <img src="../../../assets/eliminar.png" alt="eliminar">
+                  </button>
                 </td>
               </tr>
-              
               
             </tbody>
           </table>
 
-        </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="eliminarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title textologo" id="exampleModalLabel">H+ Alarm</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Seguro que desea eliminar este evento?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-aceptar" data-bs-dismiss="modal">Eliminar</button>
       </div>
     </div>
   </div>
