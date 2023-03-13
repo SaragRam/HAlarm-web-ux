@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+
+.paginicial{
+    margin-top: 200px
+}
+
+.fondologin{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100hv;
+    width: inherit;
+
+}
+
+.fondo{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: initial;
+}
+
+.btn-aceptar{
+    text-align: center;
+    color: white;
+    background-color: #4306C7;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+
+.btn-cancelar{
+    text-align: center;
+    color: #4306C7;
+    background-color: #ffffff00;
+    border: 1px solid #4306C7;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 6px;
+}
+
+.btn:hover {
+    background-color: #4306c796; 
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.texto1{
+    color: #040238;
+}
+
+.textologo{
+    color: #113FFA;
+}
+
+.bordeinput{
+    border: 1px solid #056DE3;
+
+}
+
+.bordecard{
+    border: 1px solid #1140fa7a;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}

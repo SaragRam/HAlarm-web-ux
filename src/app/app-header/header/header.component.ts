@@ -22,8 +22,11 @@ export class HeaderComponent implements OnInit {
     else if (menu === "crearEvento") {
       this.routerPath.navigate([`/crear-evento`])
     }
-    else {
+    else if (menu === "ImportarEventos") {
       this.routerPath.navigate([`/importar-eventos`])
+    }
+    else {
+      this.routerPath.navigate([`/`])
     }
   }
 

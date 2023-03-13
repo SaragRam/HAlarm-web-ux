@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/usuario-login.component';
 import { EventosComponent } from './evento/eventos-list/eventos-list.component';
 import { EventoCreateComponent } from './evento/evento-create/evento-create.component';
+import { EventoEditComponent } from './evento/evento-edit/evento-edit.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'crear-evento',
     component: EventoCreateComponent
+  },
+  {
+    path: 'editar-evento',
+    component: EventoEditComponent
   },
 ];
 

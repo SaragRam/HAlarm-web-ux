@@ -6,7 +6,7 @@
       <div class="card mx-3 my-5 bordecard">
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
-            <p class="mt-5 mb-2 fs-3 fw-bold texto1 d-flex text-center">Crear Evento</p>
+            <p class="mt-5 mb-2 fs-3 fw-bold texto1 d-flex text-center">Editar Evento</p>
           </div>
         </div>
 
@@ -19,7 +19,7 @@
               </div>
               <div class="col-8">
                 <input type="text" class="form-control bordeinput"
-                  placeholder="Nombre del evento">
+                  placeholder="Nombre del evento" value="Endoscopia">
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@
                 <select class="form-select bordeinput">
                   <option>Seleccionar</option>
                   <option>Juan López</option>
-                  <option>Paula Reyes</option>
+                  <option selected>Paula Reyes</option>
                   <option>Diana Pérez</option>
                   <option>Pedro García</option>
                   <option>Gabriel Jiménez</option>
@@ -55,7 +55,7 @@
                   <option>Paula Reyes</option>
                   <option>Diana Pérez</option>
                   <option>Pedro García</option>
-                  <option>Gabriel Jiménez</option>
+                  <option selected>Gabriel Jiménez</option>
                 </select>
               </div>
             </div>
@@ -68,7 +68,7 @@
                 <label class="texto1">Fecha</label>
               </div>
               <div class="col-4">
-                <input type="number" class="form-control bordeinput" type="date">
+                <input type="number" class="form-control bordeinput" type="date" value="2023-03-20">
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
                   <option>07</option>
                   <option>08</option>
                   <option>09</option>
-                  <option>10</option>
+                  <option selected>10</option>
                   <option>11</option>
                   <option>12</option>
                   <option>13</option>
@@ -108,7 +108,7 @@
               </div>:
               <div class="col-2">
                 <select class="form-select bordeinput">
-                  <option>00</option>
+                  <option selected>00</option>
                   <option>30</option>
                 </select>
               </div>
@@ -118,10 +118,10 @@
 
           <div class="row mt-4 mb-4 pt-3">
             <div class="offset-3 col-3">
-              <button class="btn btn-aceptar col-12" (click)="createEvento()">CREAR</button>
+              <button class="btn btn-aceptar col-12" (click)="editEvento()">GUARDAR</button>
             </div>
             <div class="col-3">
-              <button class="btn btn-cancelar col-12" (click)="cancelCreate()">CANCELAR</button>
+              <button class="btn btn-cancelar col-12" (click)="cancelEdit()">CANCELAR</button>
             </div>
           </div>
 

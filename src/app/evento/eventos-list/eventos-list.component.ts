@@ -19,15 +19,9 @@ export class EventosComponent implements OnInit {
   }
 
   editarEvento() {
-    
+    this.routerPath.navigate([`/editar-evento`])
   }
 
-
-
-  filtrarEventos() {
-
-
-  }
 
   eliminarEvento() {
 

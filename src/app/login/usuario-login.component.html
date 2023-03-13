@@ -1,34 +1,32 @@
-<div class="container align-items-center">
+<div class="container align-items-center paginicial">
   <div class="row align-items-center">
-    <div class="col-xs-10 col-lg-6 card px-2 ">
-      <div class="card-body text-center">
-        <h2 class="my-2">H+ Alarm</h2>
-      </div>
+    <div class="col-6 px-2 text-center">
+      <img src="../../assets/logo.png" alt="logo">
+      <h3 class="my-2 textologo">H+ Alarm</h3>
     </div>
 
-    <div class="col-xs-10 col-lg-6 container">
-      <div class="row">
-
+    <div class="col-xs-10 col-6 container">
+      <img src="../../assets/textura web media.png" class="fondologin" alt="fondo">
         <div class="my-2 row">
-          <h1 class="text-center">Iniciar sesión</h1>
+          <h1 class="text-center texto1">Iniciar sesión</h1>
         </div>
-        <div class="mb-3 row">
-          <label for="staticEmail" class="col-lg-3 col-form-label">Usuario</label>
-          <div class="col-lg-9  ">
-            <input #usuario type="text" class="form-control" placeholder="Usuario">
+        <div class="mb-3 offset-2 col-8">
+          <label class="col-12 col-form-label texto1">Usuario</label>
+          <div class="col-12">
+            <input type="text" class="form-control bordeinput" placeholder="Usuario">
           </div>
         </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-lg-3 col-form-label">Contraseña</label>
-          <div class="col-lg-9">
-            <input #contrasena type="password" class="form-control" placeholder="*********">
+        <div class="mb-3 offset-2 col-8">
+          <label class="col-12 col-form-label texto1">Contraseña</label>
+          <div class="col-12">
+            <input type="password" class="form-control bordeinput" placeholder="*********">
           </div>
         </div>
-        <div class="col-12 text-center mt-3">
+        <div class="offset-2 col-8 text-center mt-3 pt-4">
           <button (click)="onLogIn()" type="button"
-            class="btn btn-warning col-8">Ingresar</button>
+            class="btn btn-aceptar col-8">INGRESAR</button>
         </div>
-      </div>
+
     </div>
   </div>
 </div>
