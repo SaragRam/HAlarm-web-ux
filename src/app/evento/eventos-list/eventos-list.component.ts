@@ -23,8 +23,4 @@ export class EventosComponent implements OnInit {
   }
 
 
-  eliminarEvento() {
-
-  }
-
 }

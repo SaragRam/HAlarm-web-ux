@@ -4,6 +4,7 @@ import { LoginComponent } from './login/usuario-login.component';
 import { EventosComponent } from './evento/eventos-list/eventos-list.component';
 import { EventoCreateComponent } from './evento/evento-create/evento-create.component';
 import { EventoEditComponent } from './evento/evento-edit/evento-edit.component';
+import { EventosImportComponent } from './evento/eventos-import/eventos-import.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: 'editar-evento',
     component: EventoEditComponent
   },
+  {
+    path: 'importar-eventos',
+    component: EventosImportComponent
+  }
 ];
 
 @NgModule({
